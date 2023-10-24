@@ -24,4 +24,4 @@ if(product % 3 == 0){
     console.log('not dividible by 3');
 }
 
-console.log('Jason Solomon');
+console.log('Jason C. Solomon');
