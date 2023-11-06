@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jason Solomon's Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="css/capstone.css">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body class="h-screen bg-[#1d1d1f]">
+  <!-- Header -->
+  <header class="bg-[#1d1d1f]" id="homeContent">
+    <nav class="flex md:justify-center items-center w-[92%] mx-auto p-[25px]">
+
+      <!-- Main Navigation -->
+      <div class="nav-links duration-500 md:static absolute bg-[#1d1d1f] md:min-h-fit min-h-[30vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5 z-[1]">
+        <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-4 text-gray-100">
+          <li class="text-lg font-medium">
+            <a class="hover:text-yellow-400" href="">Home</a>
+          </li>
+          <li class="text-lg font-medium">
+            <a class="hover:text-yellow-400" href="#aboutContent">About Me</a>
+          </li>
+          <li class="text-lg font-medium">
+            <a class="hover:text-yellow-400" href="#projectsContent">Projects</a>
+          </li>
+          <li class="text-lg font-medium">
+            <a class="hover:text-yellow-400" href="#contactContent">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+      <!-- End Main Navigation -->
+
+        <ion-icon name="menu" class="cursor-pointer md:hidden" onclick="toggleMenu(this)"></ion-icon>
+      </div>
+    </nav>
+  </header>
+  <!-- End Header -->
+
+  <main>
+    <!--Home Section-->
+    <section class="my-[30px]">
+      <div class="flex flex-col justify-center text-center items-center">
+        <img class="homeIMG rounded-full h-[285px] mb-[10px]" src="img/gradpics/abaray-pic-square.jpg" alt="">
+        <h1 class="text-2xl font-semibold text-gray-100 mt-[10px] mb-[-15px]">&#128075; Hello, I am</h1>
+        <h1 class="text-[48px] font-bold text-gray-100">Jason Solomon</h1>
+        <p class="text-[25px] font-medium text-yellow-400 mt-[-15px] mb-[10px]">and I'm a Web Developer</p>
+
+        <div class="flex items-center justify-center mb-2.5">
+          <ul class="flex items-center gap-5">
+            <li>
+              <a href="https://www.facebook.com/jason.solomon0609?mibextid=LQQJ4d" target="_blank">
+                <ion-icon name="logo-facebook" class="hover:text-yellow-400"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.tiktok.com/@jay.0801?_t=8gu7k0GSOV0&_r=1" target="_blank">
+                <ion-icon name="logo-tiktok" class="hover:text-yellow-400"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/_jayyy0609/" target="_blank">
+                <ion-icon name="logo-instagram" class="hover:text-yellow-400"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="https://t.snapchat.com/MwtkwcfX" target="_blank">
+                <ion-icon name="logo-snapchat" class="hover:text-yellow-400"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <button type="button" class="text-white bg-yellow-500 hover:bg-yellow-600 focus:outline-none focus:ring-4 focus:ring-yellow-300 rounded-full text-lg font-bold px-5 py-2.5 text-center mr-2 mb-2 dark:focus:ring-yellow-900" onclick="downloadResume()">
+          Download Resume
+        </button>
+      </div>
+    </section>
+    <!--End Home Section-->
+
+    <section class="py-[30px]" id="aboutContent"></section>
+
+    <!--About Me Section-->
+    <section class="aboutMe h-auto w-full flex justify-center items-center my-[35px]" id="reveal">
+      <div class="mainContent w-[1290px] max-w-[95%] my-0 mb-auto flex flex-wrap items-center justify-around">
+        <img src="img/gradpics/profile-pic.jpg" class="w-[480px] h-auto rounded-lg max-w-full py-0 px-2.5">
+
+        <div class="allText w-[600px] max-w-full py-0 px-2.5">
+          <div class="relative inline-flex">
+            <h2 class="text-4xl text-gray-100 mb-2.5 font-semibold">About Me</h2>
+            <svg class="absolute w-[170px] text-yellow-500 -z-10 -left-1 h-3 bottom-2" fill="currentColor">
+              <rect height="100%" rx="6" ry="6" width="100%"></rect>
+            </svg>
+          </div>
+          
+          <p class="text-xl text-gray-100 mb-9">Hello, I'm Jason Solomon, a 22-year-old Web Developer based in the province of Pangasinan. I find joy in watching movies, anime, cooking, sketching and practicing my programming skills through watching youtube tutorials and reading documentations. I recently graduated with Academic Distinction from college last August in the degree of Bachelor of Science in Information Technology at Pangasinan State University, the leading school in Region I. My education that I acquired has equipped me with the knowledge and skills to continue exploring and excelling in my areas of interest which is Web Development.</p>
+
+          <div class="btn">
+            <a clas="" href="https://github.com/jayzi07" target="_blank">
+              <button type="button" class="text-white bg-yellow-500 hover:bg-yellow-600 focus:outline-none focus:ring-4 focus:ring-yellow-300 rounded-full dark:focus:ring-yellow-900 mr-[10px]">
+                <ion-icon name="logo-github" class="text-[32px] font-bold px-[35px] py-[5px]"></ion-icon>
+              </button>
+            </a>
+
+            <a href="https://www.linkedin.com/in/jasonsolomon0609?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
+              <button type="button" class="text-white bg-yellow-500 hover:bg-yellow-600 focus:outline-none focus:ring-4 focus:ring-yellow-300 rounded-full dark:focus:ring-yellow-900 mr-[10px]">
+                <ion-icon name="logo-linkedin" class="text-[32px] font-bold px-[35px] py-[5px]"></ion-icon>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!--Education-->
+      <section class="w-full flex h-auto justify-center items-center my-[50px]" id="reveal">
+        <div class="w-full py-[35px] px-[10%]" id="container">
+          <div class="grid gap-[20px]" id="row">
+
+            <div class="" id="col">
+              <div class="" id="title">
+                <h2 class="pt-0 pr-0 pb-[20px] pl-[30px] text-[32px] font-semibold text-yellow-400">Education &#127891;</h2>
+              </div>
+  
+              <div class="py-0 px-[30px]" id="contents">
+                <div class="relative p-[20px] bg-gray-800 cursor-pointer mb-[20px]" id="box">
+                  <h3 class="relative text-[18px] font-semibold text-yellow-400">2019 - 2023</h3>
+                  <h4 class="text-[22px] font-semibold text-gray-100">Bachelor of Science in Information Technology</h4>
+                  <h5 class="font-semibold text-gray-400">Pangasinan State University - Main Campus</h5>
+                  <h5 class="text-gray-400">Lingayen, Pangasinan</h5>
+                  <h5 class="text-gray-400 italic">Graduated With Academic Distinction</h5>
+                </div>
+
+                <div class="relative p-[20px] bg-gray-800 cursor-pointer mb-[20px]" id="box">
+                  <h3 class="relative text-[18px] font-semibold text-yellow-400">2017 - 2019</h3>
+                  <h4 class="text-[22px] font-semibold text-gray-100">Senior High School (TVL-ICT)</h4>
+                  <h5 class="font-semibold text-gray-400">Cipriano P. Primicias National High School</h5>
+                  <h5 class="text-gray-400">Alcala, Pangasinan</h5>
+                  <h5 class="text-gray-400 italic">Graduated With Honors</h5>
+                </div>
+
+                <div class="relative p-[20px] bg-gray-800 cursor-pointer mb-[20px]" id="box">
+                  <h3 class="relative text-[18px] font-semibold text-yellow-400">2013 - 2017</h3>
+                  <h4 class="text-[22px] font-semibold text-gray-100">Junior High School</h4>
+                  <h5 class="font-semibold text-gray-400">Cipriano P. Primicias National High School</h5>
+                  <h5 class="text-gray-400">Alcala, Pangasinan</h5>
+                  <h5 class="italic text-gray-400">Completed With Honors</h5>
+                </div>
+
+                <div class="relative p-[20px] bg-gray-800 cursor-pointer mb-[20px]" id="box">
+                  <h3 class="relative text-[18px] font-semibold text-yellow-400">2007 - 2013</h3>
+                  <h4 class="text-[22px] font-semibold text-gray-100">Elementary</h4>
+                  <h5 class="text-gray-400">Lingayen I Central School</h5>
+                  <h5 class="text-gray-400">Lingayen, Pangasinan</h5>
+                </div>
+
+              </div>
+            </div>
+  
+            <div class="" id="col">
+              <div class="" id="title">
+                <h2 class="pt-0 pr-0 pb-[20px] pl-[30px] text-[32px] font-semibold text-yellow-400">Internship Experience &#128188;</h2>
+              </div>
+  
+              <div class="py-0 px-[30px]" id="contents">
+                <div class="relative p-[20px] bg-gray-800 cursor-pointer mb-[20px]" id="box">
+                  <h3 class="relative text-[18px] font-semibold text-yellow-400">April 12, 2023 - June 23, 2023</h3>
+                  <h4 class="text-[22px] font-semibold text-gray-100">Office of the Vice President for Quality Assurance - Institutional Assessment and Accreditation Office</h4>
+                  <h5 class="font-semibold text-gray-400">Pangasinan State University - Main Campus</h5>
+                  <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+                    <li class="">Developed a Web-based System for managing Accreditation files using HTML/CSS and pure PHP & JavaScript programming languages.</li>
+                    <li class="">Facilitated on Altering and Editing Documents using Microsoft Office.</li>
+                    <li class="">Facilitated in Accreditation of various programs.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <!--End Education-->
+
+      <!--Skills-->
+      <section class="w-full flex flex-col justify-center text-center items-center mt-[30px]" id="reveal">
+        <h2 class="text-[32px] font-semibold text-yellow-400">&#128187; Programming Skills</h2>
+
+        <div class="flex flex-wrap justify-center my-[30px] gap-[50px]">
+          <div class="rounded-full h-[125px] w-[125px] bg-gray-800" id="circle">
+            <h3 class="text-2xl text-gray-100 font-bold pt-[8px]">1</h3>
+            <h2 class="text-2xl text-yellow-400 font-semibold pt-[7px]">HTML</h2>
+          </div>
+
+          <div class="rounded-full h-[125px] w-[125px] bg-gray-800" id="circle">
+            <h3 class="text-2xl text-gray-100 font-bold pt-[8px]">2</h3>
+            <h2 class="text-2xl text-yellow-400 font-semibold pt-[7px]">CSS</h2>
+          </div>
+
+          <div class="rounded-full h-[125px] w-[125px] bg-gray-800" id="circle">
+            <h3 class="text-2xl text-gray-100 font-bold pt-[8px]">3</h3>
+            <h2 class="text-2xl text-yellow-400 font-semibold pt-[7px]">Bootstrap</h2>
+          </div>
+
+          <div class="rounded-full h-[125px] w-[125px] bg-gray-800" id="circle">
+            <h3 class="text-2xl text-gray-100 font-bold pt-[8px]">4</h3>
+            <h2 class="text-2xl text-yellow-400 font-semibold pt-[7px]">JavaScript</h2>
+          </div>
+
+          <div class="rounded-full h-[125px] w-[125px] bg-gray-800" id="circle">
+            <h3 class="text-2xl text-gray-100 font-bold pt-[8px]">5</h3>
+            <h2 class="text-2xl text-yellow-400 font-semibold pt-[7px]">PHP</h2>
+          </div>
+
+          <div class="rounded-full h-[125px] w-[125px] bg-gray-800" id="circle">
+            <h3 class="text-2xl text-gray-100 font-bold pt-[8px]">6</h3>
+            <h2 class="text-2xl text-yellow-400 font-semibold pt-[7px]">MySQL</h2>
+          </div>
+        </div>
+      </section>
+      <!--End Skills-->
+    <!--End About Me Section-->
+
+    <section class="py-[30px]" id="projectsContent"></section>
+
+    <!--Projects-->
+    <section class="w-full flex flex-col justify-center items-center mb-[30px]" id="reveal">
+      <h2 class="text-[32px] font-semibold text-yellow-400">&#128187; Recent Projects</h2>
+
+      <div class="flex flex-wrap justify-center my-[30px] gap-[50px]">
+        <div class="recentProjects w-[320px] h-[175px] bg-gray-800 rounded-2xl flex flex-col" id="projects">
+          <h2 class="text-yellow-400 text-xl font-semibold mt-[20px] ml-[20px]">ODMS</h2>
+          <h3 class="text-gray-300 ml-[20px] mr-[10px]">Online Document Management System made using PHP.</h3>
+
+          <div class="flex justify-between mt-[30px] mx-[20px]">
+            <ion-icon name="link"></ion-icon>
+            <a href="https://psu-odms.000webhostapp.com/login.php" class="text-gray-100 font-medium hover:underline" target="_blank">See Details</a>
+          </div>
+        </div>
+
+        <div class="recentProjects w-[320px] h-[175px] bg-gray-800 rounded-2xl flex flex-col" id="projects">
+          <h2 class="text-yellow-400 text-xl font-semibold mt-[20px] ml-[20px]">JavaScript Calculator</h2>
+          <h3 class="text-gray-300 ml-[20px] mr-[10px]">Simple Calculator made using JavaScript and Tailwind CSS.</h3>
+
+          <div class="flex justify-between mt-[30px] mx-[20px]">
+            <ion-icon name="folder-open"></ion-icon>
+            <a href="#" class="text-gray-100 font-medium hover:underline">See Details</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End Projects-->
+
+    <section class="" id="contactContent"></section>
+
+    <!--Contact Us-->
+    <section class="flex items-center justify-center my-[100px] text-slate-950" id="reveal">
+      <div class="w-4/5 rounded-2xl bg-gray-200 pt-[20px] pr-[60px] pb-[40px] pl-[40px]" id="contact-container">
+        <div class="flex items-center justify-between" id="contact-content">
+          <div class="flex flex-col items-center justify-center w-1/4 h-full relative mt-[15px]" id="left-side">
+  
+            <div class="address m-3.5 text-center" id="details">
+              <ion-icon name="pin" class="text-yellow-500 text-3xl mb-2.5"></ion-icon>
+              <div class="font-semibold text-lg" id="topic">Address</div>
+              <div class="text-sm text-gray-500" id="text-one">Lingayen, Pangasinan</div>
+            </div>
+  
+            <div class="phone m-3.5 text-center" id="details">
+              <ion-icon name="call" class="text-yellow-500 text-3xl mb-2.5"></ion-icon>
+              <div class="font-semibold text-lg" id="topic">Contact Number</div>
+              <div class="text-sm text-gray-500" id="text-one">09294449841</div>
+            </div>
+  
+            <div class="email m-3.5 text-center" id="details">
+              <ion-icon name="mail" class="text-yellow-500 text-3xl mb-2.5"></ion-icon>
+              <div class="font-semibold text-lg" id="topic">Email</div>
+              <div class="text-sm text-gray-500" id="text-one">jasonsolomon36@gmail.com</div>
+            </div>
+  
+          </div>
+  
+          <div class="w-9/12 ml-[75px]" id="right-side">
+            <div class="text-2xl font-semibold text-yellow-500" id="topic-text">Send us a message</div>
+            <p class="">If you have any work from me you can message me from here. It is my utmost pleasure.</p>
+  
+            <form action="#" class="">
+              <div class="h-[50px] w-full my-[12px] mx-0" id="input-box">
+                <input class="h-full w-full rounded-lg bg-white border-none font-semibold py-0 px-[15px]" type="text" placeholder="Enter your Name">
+              </div>
+              <div class="h-[50px] w-full my-[12px] mx-0" id="input-box">
+                <input class="h-full w-full rounded-lg bg-white border-none font-semibold py-0 px-[15px]" type="text" placeholder="Enter your Subject">
+              </div>
+              <div class="h-[50px] w-full my-[12px] mx-0" id="input-box">
+                <input class="h-full w-full rounded-lg bg-white border-none font-semibold py-0 px-[15px]" type="email" placeholder="Enter your Email">
+              </div>
+              <div class="min-h-[110px]" id="input-box">
+                <textarea class="h-[110px] w-full rounded-lg bg-white border-none font-semibold py-[10px] px-[15px] resize-none" placeholder="Enter your Message"></textarea>
+              </div>
+              <div class="mt-[6px]" id="form-button">
+                <button type="button" class="inline-block text-white bg-yellow-500 hover:bg-yellow-600 focus:outline-none focus:ring-4 focus:ring-yellow-300 rounded-lg text-lg font-semibold px-5 py-2.5 text-center mr-2 mb-2 dark:focus:ring-yellow-900">
+                  Send Message
+                </button>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End Contact Us-->
+  </main>
+
+  <div class="fixed bottom-[60px] right-[10px] h-[70px] w-[70px] hidden place-items-center rounded-full cursor-pointer" id="progress">
+    <span class="block bg-[#1d1d1f] rounded-full grid place-items-center text-[35px] text-gray-100" id="progress-value">&#x1F815;</span>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-700 shadow text-gray-100">
+    <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+      <span class="text-sm sm:text-center">
+        &copy; 2023 Jason Solomon. All Rights Reserved.
+      </span>
+
+      <span class="text-sm sm:text-center">
+        <a class="hover:underline font-semibold" href="#">Terms & Conditions</a>
+      </span>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <script type="text/javascript" src="js/navbar.js"></script>
+  <script type="text/javascript" src="js/download-resume.js"></script>
+  <script type="text/javascript" src="js/reveal.js"></script>
+  <script type="text/javascript" src="js/progress-circle.js"></script>
+</body>
+</html>
